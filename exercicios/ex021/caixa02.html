@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: rgb(134, 134, 134);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        header>h1{
+            text-align: center;
+            background-color: rgb(235, 235, 235);
+            box-shadow: 0.5px 0.5px 2px black;
+            border-radius: 2px;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 9px 0px 9px 0px;
+            box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.678);
+        }
+        article{
+            background-color: lightgray;
+            padding: 10px;
+        }
+        nav{
+            background-color: rgb(141, 141, 141);
+            padding: 2px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.815);
+            border-radius: 2px;
+        }
+        nav>a{
+            color: white;
+            text-decoration: none;
+            margin-right: 35px;
+        }
+        nav>a:hover{
+            text-decoration: underline;
+        }
+        article>aside{
+            background-color: gray;
+        }
+        footer{
+            color: white;
+            background-color: rgba(0, 0, 0, 0.884);
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#" class="link6">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Tecnologia</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptates quae, omnis distinctio modi aliquam, tenetur vel quas sequi illum dolorem corrupti quos laborum nisi! Eligendi, magnam optio. Tempora, voluptatibus.
+        </section>
+        <br>
+        <section id="noticias">
+            <article>
+                <h2>Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui distinctio harum libero vero molestias aspernatur natus temporibus. Soluta cupiditate unde eius voluptatum harum nulla earum ex dolore, odio similique facilit</p>
+                <aside>
+                    Escrito por mim
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        @Desenvolvido por mim
+    </footer>
+</body>
+</html>

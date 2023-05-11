@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*NAV*/
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: rgb(22, 22, 22);
+    letter-spacing: 3px;
+    height: 100px;
+}
+nav>.logo{
+    align-self: center;
+}
+nav>span{
+    color: white;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav>ul{
+    padding: 10px 0px 10px 0px;
+    align-self: end;
+}   
+nav>ul>a{
+    text-decoration: none;
+    color: white;
+}
+.inicio:hover{
+    color: #43D0C8;
+    -webkit-transition: all 0.4s;
+}
+.sobre:hover{
+    color: #66BF63;
+    -webkit-transition: all 0.4s;
+}
+.faleconosco:hover{
+    color: #FECA5D;
+    -webkit-transition: all 0.4s;
+}
+
+/*LOGO*/
+
+.logo{
+    font-size: 24px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.logo2{
+    color: #43D0C8;
+}
+.logo3{
+    color: #F2134C;
+}
+
+/*FUNDO*/
+
+main{
+    background: url(imagens/wallpaperflare.com_wallpaper.jpg) center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*FORMULARIO*/
+
+form{
+    backdrop-filter: blur(9px);
+    color: white;
+    padding: 15px;
+    border: 2px solid #43D0C8;
+    border-radius: 15px;
+    letter-spacing: 1px;
+    width: 400px;
+    box-shadow: 1px 1px 9px rgba(255, 255, 255, 0.322);
+}
+form>div{
+    padding: 10px;
+}
+form>div>h2{
+    padding: 30px;
+    color: #FECA5D;
+    text-align: center;
+}
+form>div>input{
+    width: 300px;
+    height: 25px;
+    padding: 10px;
+    border-radius: 10px;
+}
+form>.politicaetermos>input{
+    width: 15px;
+    height: 15px;
+}
+form>.politicaetermos>a{
+    color: #66BF63;
+}
+form>.botoes>input{
+    width: 350px;
+    height: 30px;
+    text-align: center;
+    background-color: #F2134C;
+    padding: 10px;
+}
+form>div>select{
+    width: 300px;
+    height: 20px;
+    border-radius: 10px;
+}
