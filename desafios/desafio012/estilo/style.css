@@ -1,5 +1,96 @@
 @charset "UTF-8";
 
-body{
-    background-color: aqua;
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root{
+    --fonte1:  Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Pacifico', cursive;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    min-height: 100vh;
+    background-color: rgb(58, 194, 194);
+    font-family: var(--fonte1);
+}
+header{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+header>h1{
+    padding-top: 50px;
+    font-variant: small-caps ;
+    font-family: var(--fonte2);
+    font-size: 10vw;
+}
+header>p{
+    padding-bottom: 50px;
+    font-size: 4vw;
+}
+header a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a, footer a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover, footer a:hover{
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 4.4vw;
+    letter-spacing: 2px;
+}
+section p{
+    padding-bottom: 30px;
+}
+section.normal{
+    background-color: #fff;
+    color: #000;
+}
+section.imagem{
+    background-color: #313131;
+    color: #fff;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.404);
+}
+section.imagem>p{
+    display: inline-block;
+    padding: 10px 10px 10px 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1.4px 0px black;
+}
+section#img1{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#img2{
+    background-image: url('../imagens/background002.jpg ');
+    background-size: cover;
+    background-attachment: fixed;
+}
+footer{
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
 }
