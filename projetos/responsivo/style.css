@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-image: linear-gradient(to right, rgba(0, 128, 0, 0.63), rgba(28, 202, 28, 0.658), rgba(12, 12, 146, 0.568), rgb(56, 117, 138));
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vh;
+    place-content: center;
+}
+.box1{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+}
+.box1>h1{
+    line-height: 2;
+}
+.box2{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+}
+.box2>h1{
+    line-height: 2;
+}.box3{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+}
+.box3>h1{
+    line-height: 2;
+}.box4{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+}
+.box4>h1{
+    line-height: 2;
+}
+.card{
+    height: 500px;
+    place-content: center;
+    display: grid;
+    grid-template-columns: 400px 300px;
+    grid-template-rows: 200px 200px;
+    grid-template-areas: "imagem texto"
+    "imagem texto";
+}
+.card>img{
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    grid-area: imagem;
+}
+.texto{
+    grid-area: texto;
+    height: 400px;
+    width: 300px;
+    background-color: aquamarine;
+    padding: 9px;
+}
+.texto>h1{
+    padding: 0px 5px 20px 5px;
+}
