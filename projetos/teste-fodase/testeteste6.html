@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            background-image: linear-gradient(78deg,rgb(43, 43, 43) , rgb(36, 36, 36) ,rgb(39, 39, 39), rgb(53, 53, 53),rgb(65, 65, 65) ,rgb(63, 63, 63));
+        }
+        #items-wrapper{
+            width: 100vw;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        #items{
+            display: flex;
+            overflow-x: auto;
+            overflow-y: hidden;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+        .item{
+            width: 100%;
+            height: 400px;
+            flex: none;
+            scroll-snap-align:start;
+            margin-right: 10px;
+            padding: 0px 0px 5px 15px;
+        }
+        #items::-webkit-scrollbar{
+            height: 10px;
+        }
+        #items::-webkit-scrollbar-thumb{
+            background-color: rgb(114, 21, 21);
+            border-radius:5px;
+            width: 210px;
+        }
+    </style>
+</head>
+<body>
+    <div id="items-wrapper">
+        <div id="items">
+            <div class="item"><img src="https://unsplash.it/1600/400?image=950"/></div>
+            <div class="item"><img src="https://unsplash.it/1600/400?image=930"/></div>
+            <div class="item"><img src="https://unsplash.it/1600/400?image=990"/></div>
+            <div class="item"><img src="https://unsplash.it/1600/400?image=980"/></div>
+            <div class="item"><img src="https://unsplash.it/1600/400?image=970"/></div>
+            <div class="item"><img src="https://unsplash.it/1600/400?image=976"/></div>
+            <div class="item"><img src="https://unsplash.it/1600/400?image=993"/></div>
+            <div class="item"><img src="https://unsplash.it/1600/400?image=969"/></div>
+        </div>
+    </div>
+</body>
+</html>
