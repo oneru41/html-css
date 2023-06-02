@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/*dispositivo em pé*/
+
+/* html{
+    background-color: yellow;
+}
+h1{
+    color: rgb(68, 158, 158);
+    text-shadow: 1px 1px 1px red;
+}
+h1::after{
+    content: 'A tela está em pé (modo portrait)';
+    color: currentColor;
+} */
+body{
+    background: url(../imagens/cev-portrait.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
